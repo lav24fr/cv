@@ -1,0 +1,180 @@
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.App {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* General Info Container */
+.general-info-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.general-info-container h2 {
+  color: white;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+}
+
+.general-info-container p {
+  font-size: 1.1em;
+  margin: 0.75rem 0;
+  opacity: 0.95;
+}
+
+.general-info-container form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.general-info-container form h2 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+}
+
+/* Education Container */
+.education-container {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 6px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-container h2 {
+  color: white;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+}
+
+.education-container p {
+  font-size: 1.1em;
+  margin: 0.75rem 0;
+  opacity: 0.95;
+}
+
+.education-container form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-container form h2 {
+  color: #f5576c;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  border-bottom: 2px solid #f5576c;
+  padding-bottom: 0.75rem;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Form Buttons */
+.general-info-container button,
+.education-container button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.general-info-container button:hover,
+.education-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.general-info-container button:active,
+.education-container button:active {
+  transform: translateY(0);
+}
+
+/* Edit Buttons */
+.education-container button {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+}
+
+.education-container button:hover {
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .general-info-container,
+  .education-container {
+    padding: 2rem 1rem;
+  }
+
+  .general-info-container h2,
+  .education-container h2 {
+    font-size: 1.5em;
+  }
+
+  .general-info-container p,
+  .education-container p {
+    font-size: 1em;
+  }
+
+  .input-group input {
+    padding: 0.65rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .general-info-container button,
+  .education-container button {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.95em;
+  }
+}
